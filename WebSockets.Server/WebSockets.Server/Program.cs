@@ -51,14 +51,14 @@ namespace WebSockets.Server
                 {
                     // Add the incoming connection to our list.
                     clients.Add(socket);
-                    Console.WriteLine("Hello world  다냥");
+                    Console.WriteLine("Hello world");
                 };
 
                 socket.OnClose = () =>
                 {
                     // Remove the disconnected client from the list.
                     clients.Remove(socket);
-                    Console.WriteLine("꺼지라   다냥");
+                    Console.WriteLine("Connection Closed");
                 };
 
 
@@ -66,7 +66,7 @@ namespace WebSockets.Server
                 {
                     if (message == "get-video")
                     {
-                        Console.WriteLine("get video  다냥");
+                        Console.WriteLine("get video");
                         int NUMBER_OF_FRAMES = new DirectoryInfo("Video").GetFiles().Length;
 
                         // Send the video as a list of consecutive images.
@@ -89,7 +89,7 @@ namespace WebSockets.Server
 
                     else if (message == "get-bodies")
                     {
-                        Console.WriteLine("get bodies  다냥");
+                        Console.WriteLine("get bodies");
                         if (kinectSensor.IsOpen)
                         {
                             if (bodyFrameReader != null)
@@ -101,7 +101,7 @@ namespace WebSockets.Server
                     }
                     else if (message == "get-color")
                     {
-                        Console.WriteLine("get-color  다냥");
+                        Console.WriteLine("get-color");
                         if (kinectSensor.IsOpen)
                         {
                             if (colorFrameReader != null)
