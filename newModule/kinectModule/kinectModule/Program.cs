@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-
+using System.Text;
+using System.Threading.Tasks;
+using System.IO;
 
 using Fleck;
 
@@ -50,7 +52,7 @@ namespace kinectModule
                 {
                     // Remove the disconnected client from the list
                     clients.Remove(socket);
-                    Console.WriteLine("Connection Closed")
+                    Console.WriteLine("Connection Closed");
                 };
 
 
@@ -116,7 +118,7 @@ namespace kinectModule
             {
                 if (colorFrame != null)
                 {
-                    var blob = colorFrame.Serialize();
+                    var blob = colorFrame.serialize();
 
                     foreach (var client in clients)
                     {
@@ -130,7 +132,7 @@ namespace kinectModule
             }
         }
 
-        private static void bodyFrameReader_FrameArrived(object sender, BodyFrameArrivedEventArgsEventArgs e)
+        private static void bodyFrameReader_FrameArrived(object sender, BodyFrameArrivedEventArgs e)
         {
             bool dataReceived = false;
 
@@ -159,7 +161,7 @@ namespace kinectModule
 
                     if (users.Count > 0)
                     {
-                        string json = users.Serialize(_coordinateMapper, _mode);
+                        string json = users.bodySerialize(_coordinateMapper, _mode);
 
                         Console.WriteLine("jsonstring: " + json);
                         Console.WriteLine("After body serialization and to send");
