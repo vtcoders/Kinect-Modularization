@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kinectModule", "ConsoleApp1\kinectModule.csproj", "{DA401DB1-07FD-4F44-B508-ADA7C5C0B128}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kinectModule", "kinectModule\kinectModule.csproj", "{8409B55A-6859-450F-BE94-AFD3BDEA0381}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DA401DB1-07FD-4F44-B508-ADA7C5C0B128}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DA401DB1-07FD-4F44-B508-ADA7C5C0B128}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DA401DB1-07FD-4F44-B508-ADA7C5C0B128}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DA401DB1-07FD-4F44-B508-ADA7C5C0B128}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8409B55A-6859-450F-BE94-AFD3BDEA0381}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8409B55A-6859-450F-BE94-AFD3BDEA0381}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8409B55A-6859-450F-BE94-AFD3BDEA0381}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8409B55A-6859-450F-BE94-AFD3BDEA0381}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
