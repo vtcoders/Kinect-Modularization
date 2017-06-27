@@ -17,3 +17,7 @@ a. https://www.microsoft.com/en-us/download/details.aspx?id=44561
 8. Now Open the index.html file with your browser(Google Chrome) you should see that the connection is open: 
 9. Now just click on the Get Bodies button to start recording data
 10. This is demo video https://www.youtube.com/watch?v=1NuI6fBgEf4
+
+
+## Log
+2017.06.20 Currnet Code is extremely deprecated / It is not runnable. In progress of fixing the existing code.
