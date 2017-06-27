@@ -10,7 +10,7 @@ using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Runtime.Serialization.Json;
 using System.Web.Script.Serialization;
-namespace WebSockets.Server
+namespace kinectModule
 {
     class Program
     {

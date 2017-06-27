@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace WebSockets.Server
+namespace kinectModule
 {
     public enum Mode
     {

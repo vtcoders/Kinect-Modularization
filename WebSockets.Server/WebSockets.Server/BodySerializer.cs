@@ -8,7 +8,7 @@ using System.Runtime.Serialization.Json;
 using Microsoft.Kinect;
 using System.Windows;
 
-namespace WebSockets.Server
+namespace kinectModule
 {
     public static class BodySerializer
     {

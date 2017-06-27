@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WebSockets.Server
+namespace kinectModule
 {
     public class ImageUtil
     {
