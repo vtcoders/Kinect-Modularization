@@ -21,3 +21,4 @@ a. https://www.microsoft.com/en-us/download/details.aspx?id=44561
 
 ## Log
 2017.06.20 Currnet Code is extremely deprecated / It is not runnable. In progress of fixing the existing code.
+2017.07.01 Reconstruction Complete *MUST INSTALL Kinect SDK
