@@ -1,0 +1,15 @@
+C:\Users\kilgd\Desktop\Mirror Worlds\kinectModule\newkinectModule\newModule\kinectModule\kinectModule\bin\Debug\kinectModule.exe.config
+C:\Users\kilgd\Desktop\Mirror Worlds\kinectModule\newkinectModule\newModule\kinectModule\kinectModule\bin\Debug\kinectModule.exe
+C:\Users\kilgd\Desktop\Mirror Worlds\kinectModule\newkinectModule\newModule\kinectModule\kinectModule\bin\Debug\kinectModule.pdb
+C:\Users\kilgd\Desktop\Mirror Worlds\kinectModule\newkinectModule\newModule\kinectModule\kinectModule\bin\Debug\Fleck.dll
+C:\Users\kilgd\Desktop\Mirror Worlds\kinectModule\newkinectModule\newModule\kinectModule\kinectModule\bin\Debug\Microsoft.Kinect.dll
+C:\Users\kilgd\Desktop\Mirror Worlds\kinectModule\newkinectModule\newModule\kinectModule\kinectModule\bin\Debug\PresentationCore.dll
+C:\Users\kilgd\Desktop\Mirror Worlds\kinectModule\newkinectModule\newModule\kinectModule\kinectModule\bin\Debug\PresentationFramework.dll
+C:\Users\kilgd\Desktop\Mirror Worlds\kinectModule\newkinectModule\newModule\kinectModule\kinectModule\bin\Debug\System.Design.dll
+C:\Users\kilgd\Desktop\Mirror Worlds\kinectModule\newkinectModule\newModule\kinectModule\kinectModule\bin\Debug\System.Xaml.dll
+C:\Users\kilgd\Desktop\Mirror Worlds\kinectModule\newkinectModule\newModule\kinectModule\kinectModule\bin\Debug\UIAutomationProvider.dll
+C:\Users\kilgd\Desktop\Mirror Worlds\kinectModule\newkinectModule\newModule\kinectModule\kinectModule\bin\Debug\WindowsBase.dll
+C:\Users\kilgd\Desktop\Mirror Worlds\kinectModule\newkinectModule\newModule\kinectModule\kinectModule\bin\Debug\Microsoft.Kinect.xml
+C:\Users\kilgd\Desktop\Mirror Worlds\kinectModule\newkinectModule\newModule\kinectModule\kinectModule\obj\Debug\kinectModule.csprojResolveAssemblyReference.cache
+C:\Users\kilgd\Desktop\Mirror Worlds\kinectModule\newkinectModule\newModule\kinectModule\kinectModule\obj\Debug\kinectModule.exe
+C:\Users\kilgd\Desktop\Mirror Worlds\kinectModule\newkinectModule\newModule\kinectModule\kinectModule\obj\Debug\kinectModule.pdb
