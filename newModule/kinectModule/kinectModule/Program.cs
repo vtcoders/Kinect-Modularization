@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.IO;
 
 using Fleck;
@@ -37,7 +35,7 @@ namespace kinectModule
             kinectSensor.Open();
 
             // Initialize WebSocket
-            WebSocketServer server = new WebSocketServer("ws://localhost:8181");
+            WebSocketServer server = new WebSocketServer("ws://127.0.0.1:8181");    // localhost = 127.0.0.1
 
             server.Start(socket =>
             {
