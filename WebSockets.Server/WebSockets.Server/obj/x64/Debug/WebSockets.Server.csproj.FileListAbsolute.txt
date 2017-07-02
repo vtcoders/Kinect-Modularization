@@ -1,1 +1,0 @@
-C:\Users\kilgd\Desktop\Mirror Worlds\kinectModule\Kinect-Modularization\WebSockets.Server\WebSockets.Server\bin\x64\Debug\WebSockets.Server.exe.config
