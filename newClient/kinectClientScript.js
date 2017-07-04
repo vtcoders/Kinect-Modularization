@@ -8,58 +8,43 @@ window.onload = function () {
     var buttonSend = document.getElementById("send-button");
     var buttonStop = document.getElementById("stop-button");
     var label = document.getElementById("status-label");
+    //var chatArea = document.getElementById("chat-area");
     var buttonVideo = document.getElementById("video-button");
     var video = document.getElementById("video");
-	
     //Changed by Bruce
     var bodylabel = document.getElementById("body-label");
     var buttonBody = document.getElementById("body-button");
     var bodies = document.getElementById("bodies");
+    //var context = bodies.getContext("2d");  
+
     var buttonColor = document.getElementById("color-button");
     var camera = new Image();
+    //camera.onload = function () {
+    //    context.drawImage(camera, 0, 0);
+    //}
     
-	//Initialize the Kinect sensor
-	Kinect.connect("http://localhost", 8181);
-	
-	//Retrieve an instance of the Kinect sensor
-    var sensor = kinect.sensor();
-	
-	//sensor configuration
-	var configuration = {
- 
-		"interaction" : {
-			"enabled": true,
-		},
- 
-		"userviewer" : {
-			"enabled": true,
-			"resolution": "640x480", //320x240, 160x120, 128x96, 80x60
-			"userColors": { "engaged": 0xffffffff, "tracked": 0xffffffff },
-			"defaultUserColor": 0xffffffff, //RGBA
-		},
- 
-		"backgroundRemoval" : {
-			"enabled": true,
-			"resolution": "640x480", //1280x960
-		},
- 
-		"skeleton" : {
-			"enabled": true,
-		},
- 
-		"sensorStatus" : {
-			"enabled": true,
-		}
- 
-	};
-	
-	sensorToConfigure.postConfig(configuration);
+    // Connect to the WebSocket server!
+    var socket = new WebSocket("ws://localhost:8181");
+
+    /**
+    * WebSocket onopen event.
+    */
+    socket.onopen = function (event) {
+        label.innerHTML = "Main Server Connection open";
+
+        //kinectModule connection check request to the Main Server
+        socket.send("kinectCheck");
+    }
  
     /**
     * WebSocket onmessage event.
     */
     socket.onmessage = function (event) {
         if (typeof event.data === "string") {
+            if (event.data === "kinectClosed")
+            {
+                alert("Kinect Connection is Closed.\nPlease run your kinect Module!");
+            }
         
             // Create a JSON object.
             var jsonObject = JSON.parse(event.data);
