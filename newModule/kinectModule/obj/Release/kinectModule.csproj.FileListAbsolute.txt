@@ -1,0 +1,15 @@
+C:\Users\kilgd\Desktop\Mirror Worlds\Kinect-Modularization\newModule\kinectModule\bin\Release\kinectModule.exe.config
+C:\Users\kilgd\Desktop\Mirror Worlds\Kinect-Modularization\newModule\kinectModule\bin\Release\kinectModule.exe
+C:\Users\kilgd\Desktop\Mirror Worlds\Kinect-Modularization\newModule\kinectModule\bin\Release\kinectModule.pdb
+C:\Users\kilgd\Desktop\Mirror Worlds\Kinect-Modularization\newModule\kinectModule\bin\Release\Fleck.dll
+C:\Users\kilgd\Desktop\Mirror Worlds\Kinect-Modularization\newModule\kinectModule\bin\Release\Microsoft.Kinect.dll
+C:\Users\kilgd\Desktop\Mirror Worlds\Kinect-Modularization\newModule\kinectModule\bin\Release\PresentationCore.dll
+C:\Users\kilgd\Desktop\Mirror Worlds\Kinect-Modularization\newModule\kinectModule\bin\Release\PresentationFramework.dll
+C:\Users\kilgd\Desktop\Mirror Worlds\Kinect-Modularization\newModule\kinectModule\bin\Release\System.Design.dll
+C:\Users\kilgd\Desktop\Mirror Worlds\Kinect-Modularization\newModule\kinectModule\bin\Release\System.Xaml.dll
+C:\Users\kilgd\Desktop\Mirror Worlds\Kinect-Modularization\newModule\kinectModule\bin\Release\UIAutomationProvider.dll
+C:\Users\kilgd\Desktop\Mirror Worlds\Kinect-Modularization\newModule\kinectModule\bin\Release\WindowsBase.dll
+C:\Users\kilgd\Desktop\Mirror Worlds\Kinect-Modularization\newModule\kinectModule\bin\Release\Microsoft.Kinect.xml
+C:\Users\kilgd\Desktop\Mirror Worlds\Kinect-Modularization\newModule\kinectModule\obj\Release\kinectModule.csprojResolveAssemblyReference.cache
+C:\Users\kilgd\Desktop\Mirror Worlds\Kinect-Modularization\newModule\kinectModule\obj\Release\kinectModule.exe
+C:\Users\kilgd\Desktop\Mirror Worlds\Kinect-Modularization\newModule\kinectModule\obj\Release\kinectModule.pdb
