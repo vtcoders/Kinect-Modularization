@@ -24,10 +24,10 @@ window.onload = function () {
     //}
     
     // Connect to the WebSocket server!
-    var socket = new WebSocket("ws://localhost:8181");
+    var socket = new WebSocket("ws://127.0.0.1:8181");
 
     /**
-    * WebSocket onopen event.
+    * WebSocket onopen event. Confirms connection with the main server
     */
     socket.onopen = function (event) {
         label.innerHTML = "Main Server Connection open";
