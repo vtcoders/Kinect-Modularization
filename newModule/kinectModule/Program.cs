@@ -56,6 +56,28 @@ namespace kinectModule
 
                 socket.OnMessage = message =>
                 {
+
+                    // Every new kinect Client emits 'kinectCheck' to the main server. The main server emits 'kinectCheck' back to the module.
+                    if (message == "kinectCheck")
+                    {
+                        // !! The main server should keep track of the client's info and send kinectCheck to the module corresponding to the kinectClient
+                        Console.WriteLine("Client checking for kinect Module...");
+                        if (kinectSensor.IsOpen)
+                        {
+                            foreach (var client in clients)
+                            {
+                                client.Send("kinectSuccess");
+                            }
+                        }
+                        else
+                        {
+                            foreach (var client in clients)
+                            {
+                                client.Send("kinectUnavailable");
+                            }
+                        }
+                        Console.WriteLine("Module operation confirm message sent");
+                    }
                     if (message == "get-video")
                     {
                         Console.WriteLine("Get Video");

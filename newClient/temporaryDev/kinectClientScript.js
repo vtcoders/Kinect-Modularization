@@ -402,12 +402,20 @@ window.onload = function () {
                 }
             }
 
+            //This message should be sent by the main server everytime new joint data received???
             if (command.type === "clientKinectUpdate") {
                 var message = command.message;
                 //Check if the kinect module is running
                 if (message === "kinectClosed")
                 {
                     var textKinectFailure = "Kinect Connection is Closed.\nPlease run your kinect Module!";
+                    console.log(textKinectFailure);
+                    alert(textKinectFailure);
+                    window.stop();
+                }
+                if (message === "kinectUnavailable")
+                {
+                    var textKinectFailure = "Kinect sensor Unavailable.\nPlease turn on your kinect sensor!";
                     console.log(textKinectFailure);
                     alert(textKinectFailure);
                     window.stop();
