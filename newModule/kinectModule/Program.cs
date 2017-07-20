@@ -91,7 +91,9 @@ namespace kinectModule
                                 string path = "Video/" + index + ".jpg";
                                 byte[] image = ImageUtil.ToByteArray(path);
 
-                                client.Send(image);
+                                // string json = " { "type" : "type", "message" : "message~~" } ";
+                                string json = "{ \"type\" : \"clientKinectUpdate\", \"kinectType\" : \"video\", \"message\" : \"" + image + "\" }";
+                                client.Send(json);
                             }
 
                             // We send 30 frames per second, so sleep for 34 milliseconds
@@ -144,7 +146,9 @@ namespace kinectModule
                     {
                         if (blob != null)
                         {
-                            client.Send(blob);
+                            // string json = " { "type" : "type", "message" : "message~~" } ";
+                            string json = "{ \"type\" : \"clientKinectUpdate\", \"kinectType\" : \"blob\", \"message\" : \"" + blob + "\" }";
+                            client.Send(json);
                             Console.WriteLine("After color Blob sent");
                         }
                     }
@@ -181,12 +185,15 @@ namespace kinectModule
 
                     if (users.Count > 0)
                     {
-                        string json = users.bodySerialize(_coordinateMapper, _mode);
+                        string body = users.bodySerialize(_coordinateMapper, _mode);
 
-                        Console.WriteLine("jsonstring: " + json);
-                        Console.WriteLine("After body serialization and to send");
+                        Console.WriteLine("jsonstring: " + body);
 
+                        // string json = " { "type" : "type", "message" : "message~~" } ";
+                        string json = "{ \"type\" : \"clientKinectUpdate\", \"kinectType\" : \"body\", \"message\" : \"" + body + "\" }";
                         client.Send(json);
+
+                        Console.WriteLine("After body serialization and to send");
                     }
                 }
             }
